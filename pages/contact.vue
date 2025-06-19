@@ -344,7 +344,8 @@ $color3: #4b5563;
         iframe {
             width: 80%;
             height: 300px;
-
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                    0 2px 4px -2px rgba(0, 0, 0, 0.1);
             @media (max-width: 768px) {
                 width: 80%;
             }
