@@ -1,26 +1,26 @@
 <template>
     <div class="portfolio-detail" v-if="portfolio">
         <div class="container">
-            <div class="portfolio-head slide-up-on-scroll">
-                <div class="port-head-item">
+            <div class="portfolio-head">
+                <div class="port-head-item slide-up-on-scroll">
                     <h3>{{ portfolio.title }}</h3>
                 </div>
-                <div class="port-head-item">
+                <div class="port-head-item slide-down-on-scroll">
                     <h4>{{ portfolio.description }}</h4>
                 </div>
             </div>
 
             <div class="portfolio-gallery">
-                <div class="image-grid slide-left-on-scroll">
+                <div class="image-grid">
                     <div class="img-container" v-for="(img, index) in portfolio.images" :key="index">
-                        <img :src="img" alt="portfolio image" @click="openImage(img)" />
+                        <img class="slide-right-on-scroll" :src="img" alt="portfolio image" @click="openImage(img)" />
                     </div>
                 </div>
             </div>
 
             <div class="related">
-                <div class="related-head slide-up-on-scroll">
-                    <h3>ผลงานที่เกี่ยวข้อง</h3>
+                <div class="related-head ">
+                    <h3 class="slide-up-on-scroll">ผลงานที่เกี่ยวข้อง</h3>
                 </div>
 
                 <div class="portfolio-gallery">
@@ -220,7 +220,7 @@ const portfolio = computed(() =>
 
             .img-container {
                 overflow: hidden;
-                transition: transform 0.5s ease;
+                transition: transform 0.8s ease;
                 cursor: pointer;
 
                 &:hover {
@@ -232,7 +232,7 @@ const portfolio = computed(() =>
                     height: 200px;
                     object-fit: cover;
                     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-                    transition: transform 0.5s ease;
+                    transition: transform 0.8s ease;
 
                     &:hover {
                         transform: scale(1.1);
@@ -292,7 +292,7 @@ const portfolio = computed(() =>
                     background-color: $color2;
                     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
                     overflow: hidden;
-                    transition: transform 0.5s ease;
+                    transition: transform 0.8s ease;
 
                     &:hover {
                         transform: translateY(-6px);
@@ -306,7 +306,7 @@ const portfolio = computed(() =>
                             height: 200px;
                             object-fit: cover;
                             display: block;
-                            transition: transform 0.5s ease;
+                            transition: transform 0.8s ease;
                         }
                     }
 

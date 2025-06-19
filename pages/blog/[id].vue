@@ -2,7 +2,7 @@
   <div class="container">
     <div class="blog-detail" v-if="blog">
       <h1 class="article-meta slide-right-on-scroll">{{ blog.title }}</h1>
-      <div class="article-meta slide-left-on-scroll">
+      <div class="article-meta slide-right-on-scroll">
         <p>อัปเดตล่าสุด: 6 มิ.ย. 2025</p>
         <p>78 ผู้เข้าชม</p>
         <div class="article-share">
@@ -12,21 +12,21 @@
       </div>
       <hr>
       <div class="container">
-        <div class="cover slide-right-on-scroll">
-          <img :src=blog.cover alt="">
+        <div class="cover">
+          <img class="slide-right-on-scroll" :src=blog.cover alt="">
         </div>
-        <div class="slide-left-on-scroll" v-html="blog.content"></div>
+        <div class="slide-right-on-scroll" v-html="blog.content"></div>
       </div>
     </div>
     <hr>
 
     <div class="related">
-      <div class="related-head slide-up-on-scroll">
+      <div class="related-head slide-right-on-scroll">
         <h3>บทความที่เกี่ยวข้อง</h3>
       </div>
 
-      <div class="blog-grid slide-right-on-scroll">
-        <div class="blog-item" v-for="blog in randomBlogs" :key="blog.id">
+      <div class="blog-grid">
+        <div class="blog-item slide-right-on-scroll" v-for="blog in randomBlogs" :key="blog.id">
           <NuxtLink :to="`/blog/${blog.id}`">
             <div class="img-container">
               <img :src=blog.cover alt="">
@@ -259,7 +259,7 @@ $color2: #1e1e1e;
     }
 
     .article-meta {
-      margin-bottom:50px ;
+      margin-bottom:16px ;
       p {
         margin: 0 0 0 0;
         font-size: 14px;
@@ -268,7 +268,7 @@ $color2: #1e1e1e;
       .article-share {
         display: flex;
         align-items: center;
-
+        margin: 0 0 16px 0;
         img {
           margin-right: 4px;
         }
@@ -324,7 +324,7 @@ $color2: #1e1e1e;
       .blog-item {
         margin-bottom: 24px;
         overflow: hidden;
-        transition: transform 0.5s ease;
+        transition: transform 0.8s ease;
 
         &:hover {
           transform: translateY(-6px);
@@ -339,7 +339,7 @@ $color2: #1e1e1e;
             height: 200px;
             object-fit: cover;
             display: block;
-            transition: transform 0.5s ease;
+            transition: transform 0.8s ease;
           }
         }
 

@@ -57,6 +57,7 @@ const handleScroll = () => {
     showBackToTop.value = window.scrollY > 300;
 };
 
+
 const routeClass = computed(() => {
     if (route.name === 'index') return 'index';
     if (route.name === 'blog' || route.path.startsWith('/blog')) return 'blog';
@@ -90,7 +91,7 @@ const heroText = computed(() => {
     } else if (name === "contact") {
         return {
             title: "ติดต่อเรา",
-            subtitle: "เราพร้อมให้บริการและตอบทุกคำถามของคุณด้วยความใส่ใจ",
+            subtitle: "",
             description: "",
         };
     } else {
@@ -180,6 +181,7 @@ $color2: #1e1e1e;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                
 
                 .logo {
                     font-weight: bold;

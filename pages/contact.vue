@@ -1,9 +1,9 @@
 <template>
     <div class="container">
         <div class="contact">
-            <div class="contact-head slide-right-on-scroll">
-                <h2>ช่องทางการติดต่อ</h2>
-                <p>เรามีหลากหลายช่องทางให้คุณเลือก เลือกวิธีที่สะดวกที่สุดได้เลย</p>
+            <div class="contact-head">
+                <h2 class="slide-left-on-scroll">ช่องทางการติดต่อ</h2>
+                <p class="slide-right-on-scroll">เรามีหลากหลายช่องทางให้คุณเลือก เลือกวิธีที่สะดวกที่สุดได้เลย</p>
             </div>
             <div class="contact-wrap">
                 <div class="contact-item slide-up-on-scroll">
@@ -32,21 +32,21 @@
                 </div>
             </div>
             <div class="follow">
-                <div class="follow-head slide-left-on-scroll">
-                    <h2>ติดตามเรา</h2>
-                    <p>ติดตามข้อมูลข่าวสารและกิจกรรมจากเราได้ผ่านช่องทางต่อไปนี้</p>
+                <div class="follow-head">
+                    <h2 class="slide-left-on-scroll">ติดตามเรา</h2>
+                    <p class="slide-right-on-scroll">ติดตามข้อมูลข่าวสารและกิจกรรมจากเราได้ผ่านช่องทางต่อไปนี้</p>
                 </div>
-                <div class="follow-wrap slide-up-on-scroll">
-                    <div class="follow-item">
+                <div class="follow-wrap">
+                    <div class="follow-item slide-left-on-scroll">
                         <a href=""><img src="/public/assets/social/facebook.svg" alt=""></a>
                     </div>
-                    <div class="follow-item">
+                    <div class="follow-item slide-left-on-scroll">
                         <a href=""><img src="/public/assets/social/tiktok.svg" alt=""></a>
                     </div>
-                    <div class="follow-item">
+                    <div class="follow-item slide-left-on-scroll">
                         <a href=""><img src="/public/assets/social/line.svg" alt=""></a>
                     </div>
-                    <div class="follow-item">
+                    <div class="follow-item slide-left-on-scroll">
                         <a href=""><img src="/public/assets/social/youtube.svg" alt=""></a>
                     </div>
                 </div>
@@ -56,22 +56,22 @@
 
     <div class="message">
         <div class="message-wrap">
-            <div class="message-head slide-right-on-scroll">
-                <h2>ส่งข้อความถึงเรา</h2>
-                <p>กรอกแบบฟอร์มด้านล่าง เราจะติดต่อกลับหาคุณโดยเร็วที่สุด</p>
+            <div class="message-head">
+                <h2 class="slide-left-on-scroll">ส่งข้อความถึงเรา</h2>
+                <p class="slide-right-on-scroll">กรอกแบบฟอร์มด้านล่าง เราจะติดต่อกลับหาคุณโดยเร็วที่สุด</p>
             </div>
-            <form class="slide-down-on-scroll" action="">
+            <form action="">
                 <div class="form-wrap">
-                    <div class="form-item">
+                    <div class="form-item slide-left-on-scroll">
                         <label for="fullname">ชื่อ-นามสกุล</label>
                         <input type="text" id="fullname" name="fullname" placeholder="ชื่อ-นามสกุลของคุณ">
                     </div>
-                    <div class="form-item">
+                    <div class="form-item slide-left-on-scroll">
                         <label for="email">อีเมล</label>
                         <input type="email" name="email" id="email" placeholder="อีเมลของคุณ">
                     </div>
                 </div>
-                <div class="form-wrap">
+                <div class="form-wrap slide-left-on-scroll">
                     <div class="form-item">
                         <label for="tel">เบอร์โทร</label>
                         <input type="tel" id="tel" name="tel" placeholder="เบอร์โทรของคุณ">
@@ -81,7 +81,7 @@
                         <input type="text" name="subject" id="subject" placeholder="เรื่องที่ติดต่อของคุณ">
                     </div>
                 </div>
-                <div class="form-wrap">
+                <div class="form-wrap slide-left-on-scroll">
                     <div class="message-item">
                         <label for="message">ข้อความที่ต้องการส่งถึงเรา</label>
                         <textarea name="message" id="message"
@@ -89,7 +89,7 @@
                     </div>
                 </div>
 
-                <div class="submit">
+                <div class="submit slide-left-on-scroll">
                     <button>ส่งข้อความถึงเรา</button>
                 </div>
             </form>
@@ -97,19 +97,19 @@
     </div>
 
     <div class="map">
-        <div class="map-head slide-left-on-scroll">
-            <h2>ที่ตั้งของเรา</h2>
-            <p>ดูตำแหน่งของเราได้จากแผนที่ด้านล่าง</p>
+        <div class="map-head">
+            <h2 class="slide-left-on-scroll">ที่ตั้งของเรา</h2>
+            <p class="slide-right-on-scroll">ดูตำแหน่งของเราได้จากแผนที่ด้านล่าง</p>
         </div>
-        <div class="map-contain slide-up-on-scroll">
-            <iframe
+        <div class="map-contain">
+            <iframe class="slide-down-on-scroll"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6507.771559911964!2d100.61913640844165!3d14.104067631075406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d808213bdd635%3A0x73024ddbd90c34e5!2z4Lir4Lih4Li54LmI4Lia4LmJ4Liy4LiZIOC4nuC4pOC4geC4qeC4siA1Mi8x!5e0!3m2!1sth!2sth!4v1750285908867!5m2!1sth!2sth"
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="map-button slide-down-on-scroll">
-            <a href="https://maps.app.goo.gl/SehLy1P5EgjiYCz39">
-                <button>
+        <div class="map-button">
+            <a class="slide-right-on-scroll" href="https://maps.app.goo.gl/SehLy1P5EgjiYCz39">
+                <button >
                     <img src="/public/assets/icon/location.svg" alt="">
                     กดเพื่อนำทาง
                 </button>
@@ -117,6 +117,8 @@
         </div>
     </div>
 </template>
+
+
 
 <script setup>
 

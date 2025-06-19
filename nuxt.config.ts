@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   css: [
     '/public/assets/fonts/fonts.css' ,
   ],
-
+  ssr: true,
+  nitro: {
+    preset: 'netlify'
+  }
 })
 

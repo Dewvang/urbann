@@ -148,7 +148,7 @@ $color2: #1e1e1e;
                     height: 200px;
                     object-fit: cover;
                     display: block;
-                    transition: transform 0.5s ease;
+                    transition: transform 0.8s ease;
                 }
             }
 

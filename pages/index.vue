@@ -14,7 +14,7 @@
       </p>
     </div>
     <div class="about-slide">
-      <div class="carousel-container slide-left-on-scroll">
+      <div class="carousel-container slide-right-on-scroll">
         <div class="carousel-fade">
           <div class="carousel-item" v-for="(image, index) in images" :key="index"
             :class="{ active: currentIndex === index }">
@@ -57,12 +57,12 @@
 
   <div class="portfolio">
     <div class="container">
-      <div class="portfolio-head slide-left-on-scroll">
-        <h3>ผลงานของเรา</h3>
+      <div class="portfolio-head">
+        <h3 class="slide-left-on-scroll">ผลงานของเรา</h3>
       </div>
-      <div class="portfolio-wrap slide-right-on-scroll">
-        <div class="portfolio-item" v-for="portfolio in portfolios" :key="portfolio.id">
-          <div class="img-container">
+      <div class="portfolio-wrap">
+        <div class="portfolio-item slide-right-on-scroll" v-for="portfolio in portfolios" :key="portfolio.id">
+          <div class="img-container ">
             <img :src="portfolio.cover" alt="">
           </div>
           <h4>{{ portfolio.title }}</h4>
@@ -74,10 +74,10 @@
   <div class="blog">
     <div class="container">
       <div class="blog-head">
-        <h3 class="slide-left-on-scroll">บทความ/เกล็ดความรู้</h3>
+        <h3 class="slide-right-on-scroll">บทความ/เกล็ดความรู้</h3>
       </div>
-      <div class="blog-wrap slide-down-on-scroll">
-        <div class="blog-item" v-for="blog in blogs" :key="blog.id">
+      <div class="blog-wrap">
+        <div class="blog-item slide-down-on-scroll" v-for="blog in blogs" :key="blog.id">
           <div class="img-container">
             <img :src="blog.cover" alt="">
           </div>
@@ -366,7 +366,7 @@ $color2: #1e1e1e;
       width: 32.3%;
       display: flex;
       flex-direction: column;
-      transition: transform 0.5s ease;
+      transition: transform 0.8s ease;
 
       &:hover {
         transform: translateY(-6px);
@@ -379,7 +379,7 @@ $color2: #1e1e1e;
           width: 100%;
           height: 300px;
           object-fit: cover;
-          transition: transform 0.5s ease;
+          transition: transform 0.8s ease;
           display: block; // ป้องกัน line-gap ด้านล่าง
         }
       }
@@ -423,7 +423,7 @@ $color2: #1e1e1e;
     .blog-item {
       width: 24%;
       cursor: pointer;
-      transition: transform 0.5s ease;
+      transition: transform 0.8s ease;
 
       &:hover {
         transform: translateY(-6px);
@@ -436,7 +436,7 @@ $color2: #1e1e1e;
           width: 100%;
           height: 200px;
           object-fit: cover;
-          transition: transform 0.5s ease;
+          transition: transform 0.8s ease;
           display: block; // ป้องกัน line-gap ด้านล่าง
         }
 
@@ -566,7 +566,7 @@ $color2: #1e1e1e;
             width: 100%;
             height: 150px;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform 0.8s ease;
             display: block;
           }
         }
@@ -607,7 +607,7 @@ $color2: #1e1e1e;
             width: 100%;
             height: 100px;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform 0.8s ease;
             display: block; // ป้องกัน line-gap ด้านล่าง
           }
 
@@ -707,7 +707,7 @@ $color2: #1e1e1e;
             width: 100%;
             height: 150px;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform 0.8s ease;
             display: block; // ป้องกัน line-gap ด้านล่าง
           }
 
