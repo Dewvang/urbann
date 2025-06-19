@@ -141,23 +141,23 @@ $color2: #1e1e1e;
     height: 100vh;
 
     &.index {
-        background-image: url("/assets/headerPic/Home.png");
+        background-image: url("/assets/headerPic/Home.webp");
     }
 
     &.portfolio {
-        background-image: url("/assets/headerPic/Portfolio.png");
+        background-image: url("/assets/headerPic/Portfolio.webp");
         height: 500px;
         background-size: cover;
     }
 
     &.blog {
-        background-image: url("/assets/headerPic/Blog.png");
+        background-image: url("/assets/headerPic/Blog.webp");
         height: 500px;
         background-size: cover;
     }
 
     &.contact {
-        background-image: url("/assets/headerPic/Contact.png");
+        background-image: url("/assets/headerPic/Contact.webp");
         height: 500px;
         background-size: cover;
     }
