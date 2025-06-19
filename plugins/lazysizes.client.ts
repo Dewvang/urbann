@@ -1,5 +1,5 @@
 export default defineNuxtPlugin(() => {
-    if (process) {
-        import('lazysizes')
+    if (process.client) {
+        import('lazysizes');
     }
-})
+});
