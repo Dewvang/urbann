@@ -18,7 +18,7 @@
         <div class="carousel-fade">
           <div class="carousel-item" v-for="(image, index) in images" :key="index"
             :class="{ active: currentIndex === index }">
-            <img :src="image" alt="Slide Image" />
+            <img class="lazyload" :data-src="image" alt="Slide Image" />
           </div>
         </div>
         <div class="carousel-controls">
@@ -36,19 +36,19 @@
       </div>
       <div class="service-img">
         <div class="service-img-1 ">
-          <img class="slide-down-on-scroll" src="/assets/icon/service-1.svg" alt="">
+          <img class="slide-down-on-scroll lazyload" data-src="/assets/icon/service-1.svg" alt="">
           <h4 class="slide-down-on-scroll">ปรึกษางาน</h4>
         </div>
         <div class="service-img-2">
-          <img class="slide-up-on-scroll" src="/assets/icon/service-2.svg" alt="">
+          <img class="slide-up-on-scroll lazyload" data-src="/assets/icon/service-2.svg" alt="">
           <h4 class="slide-up-on-scroll">สร้างบ้าน</h4>
         </div>
         <div class="service-img-1">
-          <img class="slide-down-on-scroll" src="/assets/icon/service-3.svg" alt="">
+          <img class="slide-down-on-scroll lazyload" data-src="/assets/icon/service-3.svg" alt="">
           <h4 class="slide-down-on-scroll">รีโนเวท</h4>
         </div>
         <div class="service-img-2">
-          <img class="slide-up-on-scroll" src="/assets/icon/service-4.svg" alt="">
+          <img class="slide-up-on-scroll lazyload" data-src="/assets/icon/service-4.svg" alt="">
           <h4 class="slide-up-on-scroll">ออกแบบ</h4>
         </div>
       </div>
@@ -63,7 +63,7 @@
       <div class="portfolio-wrap">
         <div class="portfolio-item slide-right-on-scroll" v-for="portfolio in portfolios" :key="portfolio.id">
           <div class="img-container ">
-            <img :src="portfolio.cover" alt="">
+            <img class="lazyload" :data-src="portfolio.cover" alt="">
           </div>
           <h4>{{ portfolio.title }}</h4>
         </div>
@@ -79,7 +79,7 @@
       <div class="blog-wrap">
         <div class="blog-item slide-down-on-scroll" v-for="blog in blogs" :key="blog.id">
           <div class="img-container">
-            <img :src="blog.cover" alt="">
+            <img class="lazyload" :data-src="blog.cover" alt="">
           </div>
           <div class="content">
             <h5>{{ blog.title }}</h5>

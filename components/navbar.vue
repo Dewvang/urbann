@@ -140,26 +140,28 @@ $color2: #1e1e1e;
     background-position: center;
     height: 100vh;
 
+
     &.index {
         background-image: url("/assets/headerPic/Home.webp");
     }
 
-    &.portfolio {
-        background-image: url("/assets/headerPic/Portfolio.webp");
+    &.portfolio,
+    &.blog,
+    &.contact {
         height: 500px;
         background-size: cover;
+    }
+
+    &.portfolio {
+        background-image: url("/assets/headerPic/Portfolio.webp");
     }
 
     &.blog {
         background-image: url("/assets/headerPic/Blog.webp");
-        height: 500px;
-        background-size: cover;
     }
 
     &.contact {
         background-image: url("/assets/headerPic/Contact.webp");
-        height: 500px;
-        background-size: cover;
     }
 
     .navbar {
@@ -181,7 +183,7 @@ $color2: #1e1e1e;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                
+
 
                 .logo {
                     font-weight: bold;

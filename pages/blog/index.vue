@@ -5,7 +5,7 @@
                 <div class="blog-item slide-right-on-scroll"  v-for="blog in blogs" :key="blog.id">
                     <NuxtLink :to="`/blog/${blog.id}`">
                         <div class="img-container">
-                            <img :src=blog.cover alt="">
+                            <img class="lazyload" :data-src=blog.cover alt="">
                         </div>
                         <div class="content">
                             <h5>{{ blog.title }}</h5>

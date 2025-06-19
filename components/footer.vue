@@ -12,15 +12,15 @@
 
         <div class="contact">
             <div class="contact-item">
-                <img src="/assets/icon/phone.svg" alt="">
+                <img class="lazyload" data-src="/assets/icon/phone.svg" alt="">
                 <p>085-464-4992</p>
             </div>
             <div class="contact-item">
-                <img src="/assets/icon/phone.svg" alt="">
+                <img class="lazyload" data-src="/assets/icon/phone.svg" alt="">
                 <p>089-484-8405</p>
             </div>
             <div class="contact-item">
-                <img src="/assets/icon/line.svg" alt="">
+                <img class="lazyload" data-src="/assets/icon/line.svg" alt="">
                 <p>@Udcp</p>
             </div>
         </div>

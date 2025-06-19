@@ -8,7 +8,7 @@
             <div class="contact-wrap">
                 <div class="contact-item slide-up-on-scroll">
                     <div class="img-contain">
-                        <img src="/public/assets/icon/phone-cl.svg" alt="">
+                        <img class="lazyload" data-src="/public/assets/icon/phone-cl.svg" alt="">
                     </div>
                     <h3>Phone</h3>
                     <p>085-464-4992 (คุณโอปอ)</p>
@@ -16,7 +16,7 @@
                 </div>
                 <div class="contact-item slide-down-on-scroll">
                     <div class="img-contain">
-                        <img src="/public/assets/icon/mail-cl.svg" alt="">
+                        <img class="lazyload" data-src="/public/assets/icon/mail-cl.svg" alt="">
                     </div>
                     <h3>Email</h3>
                     <p>piyawat.urbann@ gmail.com</p>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="contact-item slide-up-on-scroll">
                     <div class="img-contain">
-                        <img src="/public/assets/icon/location-cl.svg" alt="">
+                        <img class="lazyload" data-src="/public/assets/icon/location-cl.svg" alt="">
                     </div>
                     <h3>Location</h3>
                     <p>พฤกษา 52/1 ต.คลองหนึ่ง </p>
@@ -38,16 +38,16 @@
                 </div>
                 <div class="follow-wrap">
                     <div class="follow-item slide-left-on-scroll">
-                        <a href=""><img src="/public/assets/social/facebook.svg" alt=""></a>
+                        <a href=""><img class="lazyload" data-src="/public/assets/social/facebook.svg" alt=""></a>
                     </div>
                     <div class="follow-item slide-left-on-scroll">
-                        <a href=""><img src="/public/assets/social/tiktok.svg" alt=""></a>
+                        <a href=""><img class="lazyload" data-src="/public/assets/social/tiktok.svg" alt=""></a>
                     </div>
                     <div class="follow-item slide-left-on-scroll">
-                        <a href=""><img src="/public/assets/social/line.svg" alt=""></a>
+                        <a href=""><img class="lazyload" data-src="/public/assets/social/line.svg" alt=""></a>
                     </div>
                     <div class="follow-item slide-left-on-scroll">
-                        <a href=""><img src="/public/assets/social/youtube.svg" alt=""></a>
+                        <a href=""><img class="lazyload" data-src="/public/assets/social/youtube.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -102,15 +102,15 @@
             <p class="slide-right-on-scroll">ดูตำแหน่งของเราได้จากแผนที่ด้านล่าง</p>
         </div>
         <div class="map-contain">
-            <iframe class="slide-down-on-scroll"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6507.771559911964!2d100.61913640844165!3d14.104067631075406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d808213bdd635%3A0x73024ddbd90c34e5!2z4Lir4Lih4Li54LmI4Lia4LmJ4Liy4LiZIOC4nuC4pOC4geC4qeC4siA1Mi8x!5e0!3m2!1sth!2sth!4v1750285908867!5m2!1sth!2sth"
+            <iframe class="slide-down-on-scroll lazyload"
+                data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6507.771559911964!2d100.61913640844165!3d14.104067631075406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d808213bdd635%3A0x73024ddbd90c34e5!2z4Lir4Lih4Li54LmI4Lia4LmJ4Liy4LiZIOC4nuC4pOC4geC4qeC4siA1Mi8x!5e0!3m2!1sth!2sth!4v1750285908867!5m2!1sth!2sth"
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="map-button">
             <a class="slide-right-on-scroll" href="https://maps.app.goo.gl/SehLy1P5EgjiYCz39">
                 <button >
-                    <img src="/public/assets/icon/location.svg" alt="">
+                    <img class="lazyload" data-src="/public/assets/icon/location.svg" alt="">
                     กดเพื่อนำทาง
                 </button>
             </a>

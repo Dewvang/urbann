@@ -13,7 +13,7 @@
             <div class="portfolio-gallery">
                 <div class="image-grid">
                     <div class="img-container" v-for="(img, index) in portfolio.images" :key="index">
-                        <img class="slide-right-on-scroll" :src="img" alt="portfolio image" @click="openImage(img)" />
+                        <img class="slide-right-on-scroll lazyload" :data-src="img" alt="portfolio image" @click="openImage(img)" />
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                             :key="portfolio.id">
                             <NuxtLink :to="`/portfolio/${portfolio.id}`">
                                 <div class="img-container">
-                                    <img :src="portfolio.cover" :alt="portfolio.title" />
+                                    <img class="lazyload" :data-src="portfolio.cover" :alt="portfolio.title" />
                                 </div>
                                 <p>{{ portfolio.title }}</p>
                             </NuxtLink>
@@ -41,7 +41,7 @@
 
         <div v-if="activeImage" class="lightbox" @click.self="closeImage">
             <span class="close-btn" @click="closeImage">&times;</span>
-            <img :src="activeImage" alt="full image" />
+            <img class="lazyload" :data-src="activeImage" alt="full image" />
         </div>
     </div>
 

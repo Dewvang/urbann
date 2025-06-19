@@ -6,14 +6,14 @@
         <p>อัปเดตล่าสุด: 6 มิ.ย. 2025</p>
         <p>78 ผู้เข้าชม</p>
         <div class="article-share">
-          <img src="/public/assets/social/facebook.svg" alt="">
-          <img src="/public/assets/social/x.svg" alt="">
+          <img class="lazyload" data-src="/public/assets/social/facebook.svg" alt="">
+          <img class="lazyload" data-src="/public/assets/social/x.svg" alt="">
         </div>
       </div>
       <hr>
       <div class="container">
         <div class="cover">
-          <img class="slide-right-on-scroll" :src=blog.cover alt="">
+          <img class="slide-right-on-scroll lazyload" :data-src=blog.cover alt="">
         </div>
         <div class="slide-right-on-scroll" v-html="blog.content"></div>
       </div>
@@ -29,7 +29,7 @@
         <div class="blog-item slide-right-on-scroll" v-for="blog in randomBlogs" :key="blog.id">
           <NuxtLink :to="`/blog/${blog.id}`">
             <div class="img-container">
-              <img :src=blog.cover alt="">
+              <img class="lazyload" :data-src=blog.cover alt="">
             </div>
             <div class="content">
               <h5>{{ blog.title }}</h5>

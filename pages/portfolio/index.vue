@@ -5,7 +5,7 @@
                 <div class="gallery-item slide-right-on-scroll" v-for="portfolio in portfolios" :key="portfolio.id">
                     <NuxtLink :to="`/portfolio/${portfolio.id}`">
                         <div class="img-container">
-                            <img :src="portfolio.cover" alt="" />
+                            <img class="lazyload" :data-src="portfolio.cover" alt="" />
                         </div>
                         <p>{{ portfolio.title }}</p>
                     </NuxtLink>
