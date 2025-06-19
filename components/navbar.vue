@@ -316,7 +316,6 @@ $color2: #1e1e1e;
         .hero-text {
             text-align: center;
             color: white;
-            padding-bottom: 100px;
 
             h1 {
                 display: inline-block;
