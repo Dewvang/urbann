@@ -6,8 +6,8 @@
         <p>อัปเดตล่าสุด: 6 มิ.ย. 2025</p>
         <p>78 ผู้เข้าชม</p>
         <div class="article-share">
-          <img class="lazyload" data-src="/public/assets/social/facebook.svg" alt="">
-          <img class="lazyload" data-src="/public/assets/social/x.svg" alt="">
+          <img class="lazyload" data-src="/assets/social/facebook.svg" alt="">
+          <img class="lazyload" data-src="/assets/social/x.svg" alt="">
         </div>
       </div>
       <hr>

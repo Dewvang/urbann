@@ -8,7 +8,7 @@
             <div class="contact-wrap">
                 <div class="contact-item slide-up-on-scroll">
                     <div class="img-contain">
-                        <img class="lazyload" data-src="/public/assets/icon/phone-cl.svg" alt="">
+                        <img class="lazyload" data-src="/assets/icon/phone-cl.svg" alt="">
                     </div>
                     <h3>Phone</h3>
                     <p>085-464-4992 (คุณโอปอ)</p>
@@ -16,7 +16,7 @@
                 </div>
                 <div class="contact-item slide-down-on-scroll">
                     <div class="img-contain">
-                        <img class="lazyload" data-src="/public/assets/icon/mail-cl.svg" alt="">
+                        <img class="lazyload" data-src="/assets/icon/mail-cl.svg" alt="">
                     </div>
                     <h3>Email</h3>
                     <p>piyawat.urbann@ gmail.com</p>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="contact-item slide-up-on-scroll">
                     <div class="img-contain">
-                        <img class="lazyload" data-src="/public/assets/icon/location-cl.svg" alt="">
+                        <img class="lazyload" data-src="/assets/icon/location-cl.svg" alt="">
                     </div>
                     <h3>Location</h3>
                     <p>พฤกษา 52/1 ต.คลองหนึ่ง </p>
@@ -38,16 +38,16 @@
                 </div>
                 <div class="follow-wrap">
                     <div class="follow-item slide-left-on-scroll">
-                        <a href=""><img class="lazyload" data-src="/public/assets/social/facebook.svg" alt=""></a>
+                        <a href=""><img class="lazyload" data-src="/assets/social/facebook.svg" alt=""></a>
                     </div>
                     <div class="follow-item slide-left-on-scroll">
-                        <a href=""><img class="lazyload" data-src="/public/assets/social/tiktok.svg" alt=""></a>
+                        <a href=""><img class="lazyload" data-src="/assets/social/tiktok.svg" alt=""></a>
                     </div>
                     <div class="follow-item slide-left-on-scroll">
-                        <a href=""><img class="lazyload" data-src="/public/assets/social/line.svg" alt=""></a>
+                        <a href=""><img class="lazyload" data-src="/assets/social/line.svg" alt=""></a>
                     </div>
                     <div class="follow-item slide-left-on-scroll">
-                        <a href=""><img class="lazyload" data-src="/public/assets/social/youtube.svg" alt=""></a>
+                        <a href=""><img class="lazyload" data-src="/assets/social/youtube.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
         <div class="map-button">
             <a class="slide-right-on-scroll" href="https://maps.app.goo.gl/SehLy1P5EgjiYCz39">
                 <button >
-                    <img class="lazyload" data-src="/public/assets/icon/location.svg" alt="">
+                    <img class="lazyload" data-src="/assets/icon/location.svg" alt="">
                     กดเพื่อนำทาง
                 </button>
             </a>
